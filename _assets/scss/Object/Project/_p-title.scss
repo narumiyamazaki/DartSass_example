@@ -1,0 +1,8 @@
+@forward '../../Foundation/mixin';
+
+.p-title{
+    font-size:10rem;
+    @include mixin.mq(sp){
+        color: red;
+    }
+}
