@@ -19,7 +19,7 @@ $(window).resize((event) => {
             var div = $('<div class="p-item-section--cotainer">');
             //.c-item-section1のついたクラスに
             $(".c-item-section1").wrapAll(div);
-            $('.inner').wrapAll('<div class="new" />');
+            //$('.inner').wrapAll('<div class="new" />');
         }
         //768px以上なら何もしない
         else {
