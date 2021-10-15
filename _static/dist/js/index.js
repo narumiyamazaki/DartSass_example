@@ -16,7 +16,7 @@ $(window).resize((event) => {
         if (width <= 768) {
             //追加されるHTML親要素
             //<div class="p-item-section--cotainer"></div>を親要素に指定する
-            var div = $('<div class="p-item-section--cotainer">');
+            var div = $('<div class="p-item-section--container">');
             //.c-item-section1のついたクラスに
             $(".c-item-section1").wrapAll(div);
             //$('.inner').wrapAll('<div class="new" />');
