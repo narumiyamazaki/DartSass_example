@@ -559,6 +559,32 @@ body {
   }
 }
 
+.p-text {
+  color: antiquewhite;
+  font-size: 2rem;
+}
+
+.background {
+  background-color: black;
+  width: 680px;
+  height: 235px;
+}
+
+.container {
+  padding-top: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.item {
+  background-color: aqua;
+  font-size: 1.2rem;
+  padding: 1rem;
+}
+
 h1 {
   color: indianred;
 }
