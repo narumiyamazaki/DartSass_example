@@ -564,6 +564,23 @@ body {
   font-size: 2rem;
 }
 
+.p-item-section--container1 {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 6rem;
+}
+
+.p-item-section--container2 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.p-item-section--container3 {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 6rem;
+}
+
 .background {
   background-color: black;
   width: 680px;
@@ -572,11 +589,14 @@ body {
 
 .container {
   padding-top: 1rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
+  padding: 0 10rem;
+}
+@media screen and (min-width: 768px) {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+  }
 }
 
 .item {
@@ -584,26 +604,10 @@ body {
   font-size: 1.2rem;
   padding: 1rem;
 }
-
-h1 {
-  color: indianred;
-}
-h1 span {
-  display: flex;
-  align-items: center;
-  position: relative;
-}
-h1 span::before, h1 span::after {
-  content: "";
-  display: block;
-  width: 30px;
-  height: 2px;
-  background-color: green;
-}
-h1 span::before {
-  transform: rotate(45deg);
-}
-h1 span::after {
-  transform: rotate(-45deg);
+@media screen and (min-width: 768px) {
+  .item {
+    width: 10rem;
+    margin-bottom: 2rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */

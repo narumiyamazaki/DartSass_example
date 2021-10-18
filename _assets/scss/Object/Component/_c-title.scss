@@ -1,21 +1,27 @@
-h1 {
-    color: indianred;
-    span {
-      display: flex;
-      align-items: center;
-      position: relative;
-      &::before,&::after {
-        content: '';
-        display: block;
-        width: 30px;
-        height: 2px;
-        background-color: green;
-      }
-      &::before {
-        transform: rotate(45deg);
-      }
-      &::after {
-        transform: rotate(-45deg);
-      }
-    }
+@use "../../Foundation/mixin";
+
+.background{
+  background-color:black;
+  width: 680px;
+  height:235px;
+}
+
+.container{
+  padding-top:1rem;
+  padding:0 10rem;
+  @include mixin.mq(tb){
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap:10px;
   }
+}
+
+.item{
+  background-color:aqua;
+  font-size: 1.2rem;
+  padding: 1rem;
+  @include mixin.mq(tb){
+    width: 10rem;
+    margin-bottom: 2rem;
+  }
+}
